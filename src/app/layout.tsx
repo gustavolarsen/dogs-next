@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Dogs Next',
-  description: 'Criado por Gustavo Larsen',
+  description: 'Rede social para cães',
 };
 
 export default function RootLayout({
