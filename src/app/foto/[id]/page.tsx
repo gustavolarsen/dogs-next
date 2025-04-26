@@ -1,11 +1,7 @@
-export default async function FotoIdPage({
-  params,
-}: {
-  params: { id: number };
-}) {
+export default function FotoIdPage() {
   return (
     <main>
-      <h1>FotoIdPage id: {params.id}</h1>
+      <h1>FotoIdPage</h1>
     </main>
   );
 }

@@ -1,4 +1,4 @@
-export default async function FotoPage() {
+export default function FotoPage() {
   return (
     <main>
       <h1>Foto</h1>
