@@ -24,7 +24,8 @@ export default async function photoPost(state: object, formData: FormData) {
       },
       body: formData,
     });
-    if (!response.ok) throw new Error('Erro ao enviar a foto.');
+    if (!response.ok)
+      throw new Error(`Erro ao enviar a foto. Código ${response.status}`);
   } catch (error: unknown) {
     return apiError(error);
   }

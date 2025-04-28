@@ -15,7 +15,7 @@ export default async function userGet() {
   try {
     const token = (await cookies()).get('token')?.value;
     if (!token) throw new Error('Token não encontrado.');
-    const { url } = USER_GET(token);
+    const { url } = USER_GET();
     const response = await fetch(url, {
       method: 'GET',
       headers: {

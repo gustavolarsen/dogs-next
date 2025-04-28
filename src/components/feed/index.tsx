@@ -1,5 +1,10 @@
-import React from 'react';
+import { Photo } from '@/actions/photosGet';
+import FeedPhotos from './feedFotos';
 
-export default function Feed() {
-  return <div>Feed</div>;
+export default function Feed({ photos }: { photos: Photo[] }) {
+  return (
+    <div>
+      <FeedPhotos photos={photos} />
+    </div>
+  );
 }
