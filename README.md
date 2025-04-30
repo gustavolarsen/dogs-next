@@ -12,7 +12,7 @@ Acesse o projeto em produção: [dogs.gustavolarsen.com.br](https://dogs.gustavo
 - **TypeScript**
 - **CSS Modules**
 
-## 🌐 Sobre os dados da API
+## 📄 Sobre os dados da API
 
 A api que esta sendo utilizada é uma API disponibilizada para o desenvolvimento do curso. Ela é resetada a cada 10 min!
 
