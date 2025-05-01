@@ -2,12 +2,12 @@
 
 import React from 'react';
 import styles from './photoContent.module.css';
-// import PhotoComments from './PhotoComments';
 import PhotoDelete from './photoDelete';
 import Link from 'next/link';
 import { useUser } from '@/context/userContext';
 import Image from 'next/image';
 import { PhotoData } from '@/actions/photoGet';
+import PhotoComments from './photoComments';
 
 const PhotoContent = ({
   data,
@@ -17,7 +17,7 @@ const PhotoContent = ({
   single: boolean;
 }) => {
   const { user } = useUser();
-  const { photo } = data;
+  const { photo, comments } = data;
 
   return (
     <div className={`${styles.photo} ${single ? styles.single : ''}`}>
@@ -43,7 +43,7 @@ const PhotoContent = ({
           </ul>
         </div>
       </div>
-      {/* <PhotoComments single={single} id={photo.id} comments={comments} /> */}
+      <PhotoComments single={single} id={photo.id} comments={comments} />
     </div>
   );
 };
